@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja pierwsz strona BEM - Adam Dudek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/body.css" rel="stylesheet">
+    <link href="css/bodyDark.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?famliy=Montserrat:ital,wght@0,400;0,700;1,100&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1 class="header">Adam Dudek - strona o mnie</h1>
+    </header>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li>
+                <a class="navigation__listItem" href="#Prywatnie">Prywatnie</a>
+            </li>
+            <li> <a class="navigation__listItem" href="#Zawodowo">Zawodowo</a>
+            </li>
+            <li><a class="navigation__listItem" href="#Zainteresowania">Zainteresowania</a>
+            </li>
+            <li><a class="navigation__listItem" href="#Hobby">Hobby</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="section">
+        <h2 class="section__header">Tak wyglądam</h2>
+        <section>
+            <button class="section__button">Hide the photo</button>
+            <img class="section__picture" width="300" src="images/Adam.jpg" alt="Adam Dudek">
+        </section>
+        <h2 class="section__header"> O mnie słów klika ....</h2>
+        <section id="Prywatnie">
+            <h3 class="section__header">Prywatnie</h3>
+            <p class="section__paragraph">Jestem 45-latkiem, który uwielbia aktywnie spedzać czas wolny, a Italię uważam
+                za
+                mój drugi dom.<strong class="section__strong">Uwielbiam też nowe wyzwania!</strong> Tu trafiłem po
+                obejrzeniu nagranego webinaru, na
+                który przez przypadek wpadła moja kochana żona.
+                <br>Taki ślepy traf...
+            </p>
+        </section>
+        <section id="Zawodowo">
+            <h3 class="section__header">Zawodowo</h3>
+            <p class="section__paragraph">Zawodowo zajmowałem się rynkiem nieruchomości. Niestety zmieniająca się
+                sytuacja
+                na rynku zdeterminowała mnie do szukania nowych możliwości i zmian. To z kolei wymusiło,
+                oczywiście z przyjemnością, powrót do moich źródeł, czyli skierowanie się w kierunku IT. </p>
+        </section>
+        <section id="Zainteresowania">
+            <h4 class="section__header">Zainteresowania </h4>
+            <p class="section__paragraph">Nie będę oryginalny, ale chcę połączyć pasję z pracą, czyli wejść do
+                branży IT.
+                Praca ta, myślę, w przyszłości pozwoli mi na wykonywanie jej w dowolnym miejscu na świecie lub w
+                Europie. Ponadto zmieniający się świat i nowe technologie
+                dają wręcz nieograniczone możliwości. To, co klika lat temu było niemożliwe, dziś
+                jest już normą, a ja chcę uczestniczyć w tych zmianach i być ich częścią.
+            </p>
+        </section>
+        <section id="Hobby">
+            <h4 class="section__header">Hobby </h4>
+            <p class="section__paragraph">Uwielbiam sporty powodujące wzrost adrenaliny, a więc: narciarstwo alpejskie,
+                kitesurfing,
+                kolarstwo szosowe i mtb <strong class="section__strong">(nie wiem co lubię bardziej czy pędzić po
+                    asfalcie w dół z prędkością 70
+                    km/h, czy wolniej ale po wertepach)</strong>.
+                Ponadto lubię pływanie i narciarstwo biegowe. Dodatkowo szybkie tripy motocyklem i ... gra na trąbce (od
+                czasu do
+                czasu, choć czasu coraz mniej). To tak po krótce moje hobby.</p>
+        </section>
+    </section>
+    <div class="container">
+        <table class="container__table">
+            <caption class="container__caption">Moja ulubiona muzyka</caption>
+            <tr class="container__tableRow">
+                <th class="tableCell tableHeader" scope="col">Wykonawca</th>
+                <th class="tableCell tableHeader" scope="col">Tytuł</th>
+                <th class="tableCell tableHeader" scope="col">Album</th>
+                <th class="tableCell tableHeader" scope="col">Rok</th>
+            </tr>
+            <tr class="container__tableRow">
+                <th class="tableCell tableHeader" scope="row">Chriss Botti</th>
+                <td class="tableCell">Cinema Paradiso</td>
+                <td class="tableCell">When I Foli in Love</td>
+                <td class="tableCell">2004</td>
+            </tr>
+            <tr class="container__tableRow">
+                <th class="tableCell tableHeader" scope="row">Chriss Botti & Sting</th>
+                <td class="tableCell">Seven Days</td>
+                <td class="tableCell">Live in Boston</td>
+                <td class="tableCell">2008</td>
+            </tr>
+            <tr class="container__tableRow">
+                <th class="tableCell tableHeader" scope="row">Georg Michael</th>
+                <td class="tableCell"> Careless Wisper</td>
+                <td class="tableCell">Careless Wisper</td>
+                <td class="tableCell">1984</td>
+            </tr>
+            <tr class="container__tableRow">
+                <th class="tableCell tableHeader" scope="row">Sting</th>
+                <td class="tableCell"> Shape of My Heart</td>
+                <td class="tableCell">The Sammoner's Tales</td>
+                <td class="tableCell">1993</td>
+            </tr>
+        </table>
+    </div>
+    <button class="backgroundbutton">Include <span class="themeName">a dark</span> background</button>
+    <footer class="footer">
+        (c) Copyright 2050 by Adam D - wszystkie prawa zastrzeżone;
+    </footer>
+</body>
+
+</html>
